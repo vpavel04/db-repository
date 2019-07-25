@@ -24,7 +24,7 @@ import * as mongoDbRepo from 'db-repository-mongo';
 
 db.use(mongoDbRepo.init());
 
-// define new class that works with IRepository
+// define new type that works with IRepository
 interface DbTest extends db.IDbObject {
     test: string;
 }
