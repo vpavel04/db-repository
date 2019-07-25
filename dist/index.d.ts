@@ -9,4 +9,4 @@ export interface IModuleFactory {
 export declare const use: (factoryImpl: IModuleFactory) => void;
 export declare const repo: <T extends IDbObject>(opts: any) => IRepository<T>;
 export declare const query: (opts?: any) => IQueryBuilder;
-export { IRepository, IQuery, IDbObject, IQueryBuilder};
+export { IRepository, IQuery, IDbObject, IQueryBuilder };
