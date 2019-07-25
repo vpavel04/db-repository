@@ -1,0 +1,27 @@
+{
+  "name": "db-repository",
+  "version": "1.0.0",
+  "description": "a generic implementation, in typescript, for repository pattern",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && npm run build-ts",
+    "build-ts": "tsc --build tsconfig.json",
+    "clean": "rimraf dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vpavel04/db-repository.git"
+  },
+  "author": "Vlad Pavel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vpavel04/db-repository/issues"
+  },
+  "homepage": "https://github.com/vpavel04/db-repository#readme",
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "typescript": "^3.2.2"
+  }
+}
