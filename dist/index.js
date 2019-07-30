@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const DbObjectId_1 = require("./DbObjectId");
+exports.DbObjectId = DbObjectId_1.DbObjectId;
 let factory;
 exports.use = (factoryImpl) => {
     factory = factoryImpl;

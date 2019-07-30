@@ -1,8 +1,9 @@
 
-import { IRepository } from './IRepository';
-import { IQuery } from './IQuery';
+import { DbObjectId } from './DbObjectId';
 import { IDbObject } from './IDbObject';
+import { IQuery } from './IQuery';
 import { IQueryBuilder } from './IQueryBuilder';
+import { IRepository } from './IRepository';
 
 export interface IModuleFactory {
     createRepository: <T extends IDbObject>(opts: any) => IRepository<T>;
@@ -26,4 +27,4 @@ export const query = (opts?: any): IQueryBuilder => {
     return factory.createQueryBuilder(opts);
 }
 
-export { IRepository, IQuery, IDbObject, IQueryBuilder };
+export { DbObjectId, IRepository, IQuery, IDbObject, IQueryBuilder };
