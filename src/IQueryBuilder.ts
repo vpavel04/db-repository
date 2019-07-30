@@ -1,5 +1,6 @@
 import { IQuery } from './IQuery';
 import { DbObjectId } from './DbObjectId';
+
 export interface IQueryBuilder {
     all(): IQuery;
     byId(id: string | DbObjectId): IQuery;
