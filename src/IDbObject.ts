@@ -1,4 +1,4 @@
-import { DbObjectId } from './DbObjectId';
+import {DbObjectId} from './DbObjectId';
 export interface IDbObject {
     _id?: DbObjectId;
 }
